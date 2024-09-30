@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kerupuk Nusantara</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-yellow-main p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-white text-2xl font-bold"><img src="img/logo-kerupuk-nusantara.png" alt="" class="w-20">
+            </h1>
+            <h1 class="container mx-auto flex justify-between items-center text-white text-2xl font-bold p-2">PT.
+                Kerupuk Nusantara</h1>
+            <!-- Hamburger Menu for Mobile -->
+            <button id="menu-btn" class="block lg:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7">
+                    </path>
+                </svg>
+            </button>
+            <!-- Navigation Links -->
+            <ul id="menu" class="hidden lg:flex space-x-6">
+                <li><a href="#home" class="text-white hover:underline">Home</a></li>
+                <li><a href="#about" class="text-white hover:underline">About</a></li>
+                <li><a href="#products" class="text-white hover:underline">Products</a></li>
+                <li><a href="#contact" class="text-white hover:underline">Contact</a></li>
+            </ul>
+        </div>
+        <!-- Mobile Menu (Hidden by Default) -->
+        <ul id="mobile-menu" class="lg:hidden hidden flex-col space-y-4 mt-4 p-4">
+            <li><a href="#home" class="block text-white">Home</a></li>
+            <li><a href="#about" class="block text-white">About</a></li>
+            <li><a href="#products" class="block text-white">Products</a></li>
+            <li><a href="#contact" class="block text-white">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="bg-yellow-light text-center py-20">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-dark">Selamat Datang di Kerupuk Nusantara</h2>
+        <p class="mt-4 text-base md:text-lg lg:text-xl text-gray-dark">Nikmati kerupuk khas nusantara dengan berbagai
+            pilihan rasa dan kualitas terbaik.</p>
+        <button class="mt-8 bg-yellow-main text-white px-4 py-2 md:px-6 md:py-3 rounded hover-bg-yellow-dark">Beli
+            Sekarang</button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-dark">Tentang Kami</h3>
+            <p class="mt-4 text-sm md:text-base lg:text-lg text-gray-dark">Kerupuk Nusantara adalah usaha lokal yang
+                menyediakan aneka kerupuk dari seluruh pelosok Indonesia. Kami menghadirkan rasa yang otentik dan
+                kualitas terbaik untuk setiap kerupuk yang kami jual.</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-yellow-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <h3 class="text-center text-2xl md:text-3xl lg:text-4xl font-bold text-gray-dark mb-12">Produk Kami</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="img/p1.png" alt="Kerupuk Udang" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold text-gray-dark mt-4">Kerupuk Udang</h4>
+                    <p class="text-gray-dark mt-2">Kerupuk dengan rasa udang yang gurih dan renyah.</p>
+                    <button
+                        class="mt-4 bg-yellow-main text-white px-4 py-2 rounded hover-bg-yellow-dark">Detail</button>
+                </div>
+                <!-- Product 2 -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="img/p2.png" alt="Kerupuk Ikan" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold text-gray-dark mt-4">Kerupuk Ikan</h4>
+                    <p class="text-gray-dark mt-2">Kerupuk ikan dengan aroma laut yang khas dan tekstur renyah.</p>
+                    <button
+                        class="mt-4 bg-yellow-main text-white px-4 py-2 rounded hover-bg-yellow-dark">Detail</button>
+                </div>
+                <!-- Product 3 -->
+                <div class="bg-white p-6 rounded shadow hover:shadow-lg transition">
+                    <img src="img/p3.png" alt="Kerupuk Bawang" class="w-full h-48 object-cover rounded">
+                    <h4 class="text-xl font-semibold text-gray-dark mt-4">Kerupuk Bawang</h4>
+                    <p class="text-gray-dark mt-2">Rasa bawang yang kuat dan renyah di setiap gigitan.</p>
+                    <button
+                        class="mt-4 bg-yellow-main text-white px-4 py-2 rounded hover-bg-yellow-dark">Detail</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h3 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-dark">Hubungi Kami</h3>
+            <p class="mt-4 text-base md:text-lg text-gray-dark">Jika Anda memiliki pertanyaan atau ingin memesan,
+                silakan hubungi kami melalui formulir di bawah ini.</p>
+            <form class="mt-8 space-y-4 max-w-lg mx-auto">
+                <input type="text" class="w-full p-4 border border-gray-light rounded" placeholder="Nama">
+                <input type="email" class="w-full p-4 border border-gray-light rounded" placeholder="Email">
+                <textarea class="w-full p-4 border border-gray-light rounded" rows="4" placeholder="Pesan"></textarea>
+                <button type="submit" class="bg-yellow-main text-white px-6 py-3 rounded hover-bg-yellow-dark">Kirim
+                    Pesan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Kontak dan Alamat -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Kontak Kami</h3>
+                    <ul class="space-y-2">
+                        <li><strong>Direktur:</strong> Muhammad Yaspa | <a href="tel:+628123456789"
+                                class="hover:underline">+62 812 3456 787</a></li>
+                        <li><strong>Spesialist IT:</strong> Zulfi Sidqil Wafa, S.kom | <a href="tel:+628123456789"
+                                class="hover:underline">+62 812 3456 789</a></li>
+                        <li><strong>Marketing:</strong> Rifa Salam | <a href="tel:+628123456789"
+                                class="hover:underline">+62 812 3456 788</a></li>
+                        <li><strong>Alamat Kantor:</strong> Jl. Contoh No.123, Tasikmalaya, Jawa Barat</li>
+                        <li><strong>Email:</strong> <a href="mailto:info@kerupuknusantara.com"
+                                class="hover:underline">kerupuknusantara2015@gmail.com</a></li>
+                    </ul>
+                </div>
+
+                <!-- Peta -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Lokasi Kantor Kami</h3>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.3538329602387!2d108.21485901440917!3d-7.327383574248161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6592642c3e7b0d%3A0x9c6d65d91e84a765!2sTasikmalaya%2C%20West%20Java!5e0!3m2!1sen!2sid!4v1696061623457!5m2!1sen!2sid"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <p class="text-sm md:text-base">&copy; 2024 Kerupuk Nusantara. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

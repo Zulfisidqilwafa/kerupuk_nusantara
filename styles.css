@@ -1,0 +1,20 @@
+/* Custom Colors */
+.bg-yellow-main {
+    background-color: #f59e0b;
+}
+
+.hover-bg-yellow-dark:hover {
+    background-color: #f59e0b;
+}
+
+.bg-yellow-light {
+    background-color: #fef3c7;
+}
+
+.text-gray-dark {
+    color: #4b5563;
+}
+
+.border-gray-light {
+    border-color: #e5e7eb;
+}
